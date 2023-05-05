@@ -1,0 +1,125 @@
+body{
+    max-width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(243,245,253);
+}
+.aluraA{
+    margin-left:2% ;
+    margin-top: .5%;
+    font-size: 60px;
+    color:rgb(1,57,112);
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.playarea{
+    padding: 10px;
+    height: 600px;
+}
+
+.result{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius:10px;
+    height: 600px;
+    box-shadow: 10px 10px 20px -14px rgba(0,0,0,0.75);
+
+}
+.playarea .txtarea{
+    font-size: 20px;
+    background-color: rgb(243,245,253);
+    border: solid 2px rgb(243,245,253);
+
+}
+
+.txtarea{
+    outline: none;
+    font-size: 20px;
+    width: 400px;
+    height: 500px;    
+    resize: none;
+    border: solid 2px rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+.accion {
+    color:rgb(255, 255, 255);
+    background-color:rgb(1,57,112);
+    width: 200px;
+    height: 40px;
+    border-radius: 14px;
+    border: none;
+    transition: 100ms;
+}
+.copy{
+    color:rgb(1,57,112);
+    background-color:rgb(255, 255, 255);
+    width: 400px;
+    height: 40px;
+    border-radius: 14px;
+    border: solid 1px rgb(1,57,112);
+    transition: 100ms;
+    margin-top: 50px;
+
+}
+.accion1{
+    color:rgb(0, 0, 0);
+    background-color: rgb(243,245,253);
+    width: 200px;
+    height: 40px;
+    border-radius: 14px;
+    border: solid 1px rgb(1,57,112);
+    transition: 100ms;
+}
+.accion,.accion1{
+    margin-top: 50px;
+}
+.accion:active, .accion1:active ,.copy:active{
+   scale: .9;
+}
+.accion:hover, .accion1:hover, .copy:hover{
+    box-shadow: 2px 2px 1px 2px rgba(0,0,0,0.75);
+
+}
+
+.cop{
+    opacity: 1;
+}
+.copy:active .copymsj{
+    display: block;
+}
+.copymsj{
+    border-radius: 8px;
+    border: solid 1px black;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left:142px ;
+    width: 100px;
+    text-align: center;
+    display: none;
+    font-size: 15px;
+    align-self: center;
+}
+@media screen and (max-width:900px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .txtarea{
+        width:90%;
+        height: 250px;    
+    }
+    .accion,.accion1 {
+        width: 49%;
+        height: 40px;
+       
+    }
+    .copy{
+        width: 99%;
+    }
+    .playarea ,.result{
+        height: 49%;
+    }
+}

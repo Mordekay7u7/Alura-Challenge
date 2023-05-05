@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Encriptador</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/icon.png">
+        <script src="index.js"></script>
+    </head>
+    <body id="fondo">
+        <header>
+             <div>
+                    <h1 class="aluraA">Alura</h1>
+            </div>
+        </header>
+        <main>
+            <div class="Lderecho">
+                <div class="playarea">
+                    <textarea  class="txtarea" type="text" id="mensaje" placeholder="Añada su mensaje" autofocus></textarea><br>
+                    <button class="accion" onclick="save()">Encriptar</button>
+                    <button class="accion1" onclick="unsave()">Desencriptar</button><br><br>
+                </div>
+            </div>
+            <div class="Lizquierdo">
+                <div class="result" id="myDIV">
+                    <textarea placeholder="No hay nada aquí, escribe algo para encriptar" class="txtarea" type="text" id="mensajefin" disabled spellcheck="false"></textarea><br>
+                    <p class="copymsj" id="copymsj">Copiado</p>
+                    <button class="copy" onclick="copy()">Copiar</button>
+                </div>
+            </div>
+            
+        </main>
+    </body>
+</html>
