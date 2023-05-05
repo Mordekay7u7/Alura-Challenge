@@ -25,6 +25,9 @@ main{
     border-radius:10px;
     height: 600px;
     box-shadow: 10px 10px 20px -14px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 .playarea .txtarea{
@@ -83,24 +86,18 @@ main{
 
 }
 
-.cop{
-    opacity: 1;
-}
-.copy:active .copymsj{
-    display: block;
-}
 .copymsj{
     border-radius: 8px;
     border: solid 1px black;
     padding: 5px;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    margin-left:142px ;
     width: 100px;
     text-align: center;
     display: none;
     font-size: 15px;
     align-self: center;
+    font-size: large;
 }
 @media screen and (max-width:900px) {
     main{
